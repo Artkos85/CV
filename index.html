@@ -5,84 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table cellspacing ="15">
-         <tr>
-            <td>
-                <img src="foto.jpg" alt="фото резюме">
-            </td>
-            <td>
-                <h1>Косяков Артур</h1>
-                <h3><em>Инженер-конструктор</em></h3>
-                <h3><em>Я люблю свою семью, жену, сына,
-                     путешествовать.</h3></em>
-            </td>
-        </tr>
-    </table>
+
+    <div class="info">
+        <img src="foto.jpg" alt="фото резюме" 
+        class="avatar">
+
+        <h1>Косяков Артур</h1>
+        <p>Инженер-конструктор</p>
+        <p>Я люблю свою семью, жену, сына,
+            путешествовать.</h3>              
+    </div>
     
-    <hr>
-    <h2>Мои социальные сети</h2>
-    <ul>
-        <li>
-            В контакте
-        </li>
-        <li>
-            инстрагамм
-        </li>
-    </ul>
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>блогер</li>
-        <li>быстрая езда на машинах</li>
-        <li>спорт</li>
-        <li>путешествия</li>
-    </ol>
-    <h2>Опыт работы</h2>
-    <table>
-        <tr>
-            <th>Компания</th>
-            <th >Должность</th>
-            <th >Год</th>
-        </tr>   
-        <tr>
-            <td>ООО "ГеоТехник"</td>
-            <td>техник ГТИ</td>
-            <td>2010-2012</td>
-        </tr>
-        <tr>
-            <td>ООО "ПетроТул"</td>
-            <td>инженер-конструктор</td>
-            <td>2012-по сегодняшний день</td>
-        </tr>
-    </table>
-    <h2>Yotube Курсы</h2>
-    <a href="https://www.youtube.com/watch?v=DOEtVdkKwcU" target="_label">Куосы от Владилена Минина</a>
-
-    <hr>
-    <h2>Связаться со мной:</h2>
-
-<form action="/">
-    <label for="name">Ваше имя: </label>
-    <input type="text" id="name" 
-    placeholder="Введите ваше имя">
-    
-    <p></p>
-
-    <label for="email">Ваш  email: </label>
-    <input type="text" id="email" 
-    placeholder="Введите email">
     
 
-    <p></p>
+    <div class="container">
 
-    <label for="text">Введите сообщение:</label>
-    <textarea name="" id="text" cols="10" rows="2"></textarea>
-   <br>
-   <br>
-   
-    <input type="submit" value="Связаться!">
-</form>
+        
+            <div class="social">
+                <h2>Мои социальные сети</h2>
+                <ul>
+                    <li>
+                        В контакте
+                    </li>
+                    <li>
+                        инстрагамм
+                    </li>
+                </ul>
+            </div>
 
+            <div class="card bg-yellow">
+                <h2>Мои хобби</h2>
+                <ol>
+                    <li>блогер</li>
+                    <li>быстрая езда на машинах</li>
+                    <li>спорт</li>
+                    <li>путешествия</li>
+                </ol>
+            </div>
+
+            <div class="card bg-green">
+                <h2>Опыт работы</h2>
+                <table class="table">
+                    <tr>
+                        <th>Компания</th>
+                        <th >Должность</th>
+                        <th >Год</th>
+                    </tr>   
+                    <tr>
+                        <td>ООО "ГеоТехник"</td>
+                        <td>техник ГТИ</td>
+                        <td>2010-2012</td>
+                    </tr>
+                    <tr>
+                        <td>ООО "ПетроТул"</td>
+                        <td>инженер-конструктор</td>
+                        <td>2012-по сегодняшний день</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="card bg-red">
+                <h2>Yotube Курсы</h2>
+                <a href="https://www.youtube.com/watch?v=DOEtVdkKwcU" target="_label">Куосы от Владилена Минина</a>
+            </div>
+
+          
+            <h2>Связаться со мной:</h2>
+
+            <form action="/">
+            <label for="name">Ваше имя: </label>
+            <input type="text" id="name" 
+            placeholder="Введите ваше имя">
+            
+            <p></p>
+
+            <label for="email">Ваш  email: </label>
+            <input type="text" id="email" 
+            placeholder="Введите email">
+            
+
+            <p></p>
+
+            <label for="text">Введите сообщение:</label>
+            <textarea name="" id="text" cols="10" rows="2"></textarea>
+            <br>
+            <br>
+        
+            <input type="submit" value="Связаться!">
+            </form>
+
+            <div class="bpx-model">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+
+    </div>
 </body>
 </html>
