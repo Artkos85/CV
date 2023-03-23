@@ -4,45 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezume</title>
+    <title>Portfolio Kosyakov Artur</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="info">
-        <img src="foto.jpg" alt="фото резюме" 
-        class="avatar">
-
-        <h1>Косяков Артур</h1>
-        <p>Инженер-конструктор</p>
-        <p>Я люблю свою семью, жену, сына,
-            путешествовать.</h3>              
-    </div>
+    <header class="nav-menu" id="header">
+        <div class="container">
+          <nav class="menu">
+            <ul class="menu-list">
+              <li class="menu-list-item"><a href="#header" data="header" class="list-item-link active">Главная</a></li>
+              <li class="menu-list-item"><a href="#about" data="about" class="list-item-link">Обо мне</a></li>
+              <li class="menu-list-item"><a href="#skills" data="skills" class="list-item-link">Навыки</a></li>
+              <li class="menu-list-item"><a href="#portfolio" data="portfolio" class="list-item-link">Портфолио</a></li>
+              <li class="menu-list-item"><a href="#contacts" data="contacts" class="list-item-link">Контакты</a></li>
+            </ul>
+            <!-- href="index.html"
+            href="index-eng.html" -->
+            <div class="lang"><a href="javascript: linkDelay()" class="ru active">RU</a> | <a href="javascript: linkDelay()" class="eng">ENG</a></div>
+            <a href="https://github.com/Artkos85/CV" class="github-link-mobile">Проект на GitHub</a>
+          </nav>
+          <div class="mobile-burger"><span></span></div>
+        </div>
+        <br>
+    </header>
     
     
 
-    <div class="container">
 
-
+    <section class="info" id="info">
+        
+            <div class="info-title">
+                <img src="foto.jpg" alt="foto portfolio" class="avatar">
+               
+            </div>       
+        
+    </section>
+    
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="about-title">Обо мне</h2>
+            <p class="elem">
+                Привет, я Артур. Мне интересна разработка приложений, веб-интерфейса и всего, что с этим связано.
+            </p>
+            <p class="elem">
+                Свой путь в Web я начал с изучения курсов от Владилена Минина, и понял что мне интересен Web и программирование,
+                а также создавать дизайн интернет страничек и воплощать их в жизнь.
+            </p>   
+            <p class="elem">
+                Опыта в сфере IT и коммерческой разработки и работы в команде нет.
+            </p>
+            <p class="elem">
+                Мне нравитcя разбираться в том, как работает изнутри какое-то решение или технология,
+                поэтому готов реализовывать различные проекты с замечательными людьми.
+            </p>
+        </div>
+    </section>
+    
+    <section class="social-web" id="social-web">
+        <div class="container">
             <div class="social">
                 <h2>Мои социальные сети</h2>
                 <ul>
                     <li>
-                        В контакте
+                        <a href="https://vk.com/id2929485" target="_label">страничка в VK</a>
                     </li>
                     <li>
-                        инстрагамм
+                        <a href="https://instagram.com/" target="_label">страничка в Инстаграмме</a>
                     </li>
                 </ul>
             </div>
+          
 
             <div class="card bg-yellow">
                 <h2>Мои хобби</h2>
                 <ol>
-                    <li>блогер</li>
-                    <li>быстрая езда на машинах</li>
-                    <li>спорт</li>
-                    <li>путешествия</li>
+                    <li>24/7 изучаю frontend</li>
+                    <li>размеренная езда на машине</li>
+                    <li>ПК игры</li>
+                    <li>Псоздание своих игр</li>
+                    <li>люблю Тайланд</li>
                 </ol>
             </div>
 
@@ -64,6 +105,11 @@
                         <td>инженер-конструктор</td>
                         <td>2012-по сегодняшний день</td>
                     </tr>
+                    <tr>
+                        <td>Самозанятый</td>
+                        <td>frontender</td>
+                        <td>c 2021-по сегодняшний день</td>
+                    </tr>
                 </table>
             </div>
             
@@ -71,38 +117,48 @@
                 <h2>Yotube Курсы</h2>
                 <a href="https://www.youtube.com/watch?v=DOEtVdkKwcU" target="_label">Курсы от Владилена Минина</a>
             </div>
+        </div>
+    </section> 
 
-          
-            <h2>Связаться со мной:</h2>
+            <section>
+                <div class="container">
+                    <div class="card contacts">
+                    <h2>Связаться со мной:</h2>
 
-            <form action="/">
-            <label for="name">Ваше имя: </label>
-            <input type="text" id="name" 
-            placeholder="Введите ваше имя">
+                    <form action="/">
+                    <label for="name">Ваше имя: </label>
+                    <input type="text" id="name" 
+                    placeholder="Введите ваше имя">
+                    
+                    <p></p>
+
+                    <label for="email">Ваш  email: </label>
+                    <input type="text" id="email" 
+                    placeholder="Введите email">
+                    
+
+                    <p></p>
+
+                    <label for="text">Введите сообщение:</label>
+                    <textarea name="" id="text" cols="10" rows="2"></textarea>
+                    <br>
+                    <br>
+                
+                    <input type="submit" value="Связаться!">
+                    </form>
+
+                    <div class="bpx-model">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                </div>
+                
+                
+            </section>
             
-            <p></p>
-
-            <label for="email">Ваш  email: </label>
-            <input type="text" id="email" 
-            placeholder="Введите email">
-            
-
-            <p></p>
-
-            <label for="text">Введите сообщение:</label>
-            <textarea name="" id="text" cols="10" rows="2"></textarea>
-            <br>
-            <br>
-        
-            <input type="submit" value="Связаться!">
-            </form>
-
-            <div class="bpx-model">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
 
 
     </div>
